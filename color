@@ -1,0 +1,43 @@
+package com.example.buttoncolor;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Color;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+        Button btRed = findViewById(R.id.btRed);
+        Button btGreen = findViewById(R.id.btGreen);
+        Button btYellow = findViewById(R.id.btYellow);
+
+
+        btRed.setOnClickListener((View v) -> {
+            btRed.setBackgroundColor(Color.RED);
+        });
+
+
+        btGreen.setOnClickListener((View v) -> {
+            btGreen.setBackgroundColor(Color.GREEN);
+        });
+
+        btYellow.setOnClickListener((View v) -> {
+            btYellow.setBackgroundColor(Color.YELLOW);
+        });
+
+    }
+}
+
+
+
+
+
+
